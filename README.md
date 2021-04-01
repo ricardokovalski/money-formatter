@@ -1,2 +1,3 @@
-# money-formatter
-Formatador de valores em geral.
+# Currency Formatter
+
+Formatador de valores.
