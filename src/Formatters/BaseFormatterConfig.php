@@ -2,23 +2,31 @@
 
 namespace RicardoKovalski\CurrencyFormatter\Formatters;
 
-use RicardoKovalski\CurrencyFormatter\Contracts\FormatterConfig;
+use RicardoKovalski\CurrencyFormatter\Formatters\Contracts\FormatterConfig;
 
+/**
+ * Class BaseFormatterConfig
+ * @package RicardoKovalski\CurrencyFormatter\Formatters
+ */
 final class BaseFormatterConfig implements FormatterConfig
 {
     /**
-     * @var $currencyIsoCode
+     * @var
      */
     private $currencyIsoCode;
 
     /**
-     * @var $locale
+     * @var
      */
     private $locale;
 
     /**
+     * @var
+     */
+    private $styleIntl;
+
+    /**
      * BaseFormatterConfig constructor.
-     *
      * @param $currencyIsoCode
      * @param $locale
      */
@@ -30,7 +38,7 @@ final class BaseFormatterConfig implements FormatterConfig
 
     /**
      * @param $currencyIsoCode
-     * @return $this
+     * @return $this|mixed
      */
     public function resetCurrencyIsoCode($currencyIsoCode)
     {
@@ -48,7 +56,7 @@ final class BaseFormatterConfig implements FormatterConfig
 
     /**
      * @param $locale
-     * @return $this
+     * @return $this|mixed
      */
     public function resetLocale($locale)
     {
@@ -62,5 +70,23 @@ final class BaseFormatterConfig implements FormatterConfig
     public function getLocale()
     {
         return $this->locale;
+    }
+
+    /**
+     * @param $styleIntl
+     * @return $this|mixed
+     */
+    public function resetStyleIntl($styleIntl)
+    {
+        $this->styleIntl = $styleIntl;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStyleIntl()
+    {
+        return $this->styleIntl;
     }
 }

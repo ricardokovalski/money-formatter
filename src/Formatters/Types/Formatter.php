@@ -1,14 +1,18 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Formatters;
+namespace RicardoKovalski\CurrencyFormatter\Formatters\Types;
 
 use Money\Currency;
 use Money\Formatter\DecimalMoneyFormatter;
 use Money\Formatter\IntlMoneyFormatter;
 use Money\Money;
-use RicardoKovalski\CurrencyFormatter\Contracts\FormatterConfig;
+use RicardoKovalski\CurrencyFormatter\Formatters\Contracts\FormatterConfig;
 
-abstract class BaseFormatter
+/**
+ * Class Formatter
+ * @package RicardoKovalski\CurrencyFormatter\Formatters\Types
+ */
+abstract class Formatter
 {
     /**
      * @var Currency $currency
@@ -16,9 +20,9 @@ abstract class BaseFormatter
     private $currency;
 
     /**
-     * @var IntlMoneyFormatter|DecimalMoneyFormatter $moneyFormatter
+     * @var IntlMoneyFormatter|DecimalMoneyFormatter $formatter
      */
-    private $moneyFormatter;
+    private $formatter;
 
     /**
      * BaseFormatter constructor.
@@ -28,30 +32,30 @@ abstract class BaseFormatter
     public function __construct(FormatterConfig $formatterConfig)
     {
         $this->currency = new Currency($formatterConfig->getCurrencyIsoCode());
-        $this->makeMoneyFormatter($formatterConfig);
+        $this->makeFormatter($formatterConfig);
     }
 
     /**
      * @param FormatterConfig $formatterConfig
      * @return mixed
      */
-    abstract protected function moneyFormatter(FormatterConfig $formatterConfig);
+    abstract protected function formatter(FormatterConfig $formatterConfig);
 
     /**
      * @param FormatterConfig $formatterConfig
      * @return mixed
      */
-    protected function makeMoneyFormatter(FormatterConfig $formatterConfig)
+    protected function makeFormatter(FormatterConfig $formatterConfig)
     {
-        return $this->moneyFormatter = $this->moneyFormatter($formatterConfig);
+        return $this->formatter = $this->formatter($formatterConfig);
     }
 
     /**
      * @param $value
-     * @return mixed
+     * @return false|string
      */
     public function format($value)
     {
-        return $this->moneyFormatter->format(new Money(toInteger($value), $this->currency));
+        return $this->formatter->format(new Money(toInteger($value), $this->currency));
     }
 }

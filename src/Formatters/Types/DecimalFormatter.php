@@ -1,16 +1,19 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Formatters;
+namespace RicardoKovalski\CurrencyFormatter\Formatters\Types;
 
 use Money\Currencies\ISOCurrencies;
 use Money\Formatter\DecimalMoneyFormatter;
-use RicardoKovalski\CurrencyFormatter\Contracts\FormatterConfig;
+use RicardoKovalski\CurrencyFormatter\Formatters\Contracts\FormatterConfig;
 
-final class DecimalFormatter extends BaseFormatter
+/**
+ * Class DecimalFormatter
+ * @package RicardoKovalski\CurrencyFormatter\Formatters\Types
+ */
+final class DecimalFormatter extends Formatter
 {
     /**
      * DecimalFormatter constructor.
-     *
      * @param FormatterConfig $formatterConfig
      */
     public function __construct(FormatterConfig $formatterConfig)
@@ -22,7 +25,7 @@ final class DecimalFormatter extends BaseFormatter
      * @param FormatterConfig $formatterConfig
      * @return DecimalMoneyFormatter
      */
-    protected function moneyFormatter(FormatterConfig $formatterConfig)
+    protected function formatter(FormatterConfig $formatterConfig)
     {
         return new DecimalMoneyFormatter(new ISOCurrencies());
     }

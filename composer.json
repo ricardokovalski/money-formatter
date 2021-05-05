@@ -10,7 +10,7 @@
     }
   ],
   "license": "MIT",
-  "keywords": ["currency", "currencies", "formatter", "php"],
+  "keywords": ["currency", "currencies", "decimal", "decimal-numbers", "formatter", "intl", "money", "php"],
   "require": {
     "php": ">=5.6",
     "ext-json": "*",
@@ -25,7 +25,7 @@
       "RicardoKovalski\\CurrencyFormatter\\": "src/"
     },
     "files": [
-      "lib/src/Support/Helpers.php"
+      "src/Support/Helpers.php"
     ]
   },
   "autoload-dev": {

@@ -1,9 +1,11 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Contracts;
+namespace RicardoKovalski\CurrencyFormatter\Formatters\Contracts;
 
-use Money\Money;
-
+/**
+ * Interface FormatterConfig
+ * @package RicardoKovalski\CurrencyFormatter\Formatters\Contracts
+ */
 interface FormatterConfig
 {
     /**
@@ -29,8 +31,13 @@ interface FormatterConfig
     public function getLocale();
 
     /**
-     * @param Money $money
+     * @param $styleIntl
      * @return mixed
      */
-    //public function format(Money $money);
+    public function resetStyleIntl($styleIntl);
+
+    /**
+     * @return mixed
+     */
+    public function getStyleIntl();
 }
