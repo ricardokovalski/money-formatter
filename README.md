@@ -4,6 +4,12 @@
     <strong>Uma biblioteca PHP para formatar valores monetários.</strong>
 </p>
 
+<p align="center">
+    <a href="https://github.com/ricardokovalski/currency-formatter"><img src="http://img.shields.io/badge/source-ricardokovalski/currency-formatter-blue.svg?style=flat-square" alt="Source Code"></a>
+    <a href="https://packagist.org/packages/ricardokovalski/currency-formatter"><img src="https://img.shields.io/packagist/v/ricardokovalski/currency-formatter.svg?style=flat-square&label=release" alt="Download Package"></a>
+    <a href="https://github.com/ricardokovalski/currency-formatter/blob/master/LICENSE"><img src="https://img.shields.io/packagist/l/ricardokovalski/currency-formatter.svg?style=flat-square&colorB=darkcyan" alt="Read License"></a>
+</p>
+
 ## Sobre
 
 ricardokovalski/currency-formatter é uma biblioteca PHP que serve para formatar valores monetários.
