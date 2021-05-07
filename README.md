@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+    <a href="https://github.com/ricardokovalski/currency-formatter"><img src="http://img.shields.io/badge/source-ricardokovalski/currency--formatter-blue.svg" alt="Source Code"></a>
     <a href="https://packagist.org/packages/ricardokovalski/currency-formatter"><img src="https://poser.pugx.org/ricardokovalski/currency-formatter/v/stable" alt="Source Code"></a>
     <a href="https://github.com/ricardokovalski"><img src="http://img.shields.io/badge/author-@ricardokovalski-blue.svg" alt="Author"></a>
     <a href="https://github.com/ricardokovalski/currency-formatter/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="Read License"></a>
