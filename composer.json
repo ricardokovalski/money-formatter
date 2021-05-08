@@ -1,6 +1,6 @@
 {
   "name": "ricardokovalski/currency-formatter",
-  "description": "A simple Currency Formatter",
+  "description": "Biblioteca para formatar valores monetários.",
   "type": "library",
   "authors": [
     {
