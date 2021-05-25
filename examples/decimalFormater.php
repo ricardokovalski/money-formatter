@@ -11,4 +11,5 @@ $formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
 $intlCurrencyFormatter = new DecimalFormatter($formatterConfig);
 
 $intlCurrencyFormatter->format(268.85); //268.85
+$intlCurrencyFormatter->format(702); //702.00
 

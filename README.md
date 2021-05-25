@@ -75,8 +75,6 @@ $intlCurrencyFormatter->format(466); //R$466,00
 $intlCurrencyFormatter->format(2500.98); //R$2.500,98
 ```
 
-
-
 ## Copyright and License
 
 The ricardokovalski/currency-formatter library is copyright © [Ricardo Kovalski](https://github.com/ricardokovalski)
