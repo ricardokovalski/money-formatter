@@ -24,6 +24,11 @@ final class BaseFormatterConfig implements FormatterConfig
     private $locale;
 
     /**
+     * @var int $fractionDigits
+     */
+    private $fractionDigits;
+
+    /**
      * @var $styleIntl
      */
     private $styleIntl;
@@ -37,12 +42,10 @@ final class BaseFormatterConfig implements FormatterConfig
     public function __construct($currencyIsoCode, $locale)
     {
         $this->validationCurrencyIsoCode($currencyIsoCode);
-
         $this->currencyIsoCode = $currencyIsoCode;
-
         $this->validationLocale($locale);
-
         $this->locale = $locale;
+        $this->fractionDigits = 2;
     }
 
     /**
@@ -52,7 +55,6 @@ final class BaseFormatterConfig implements FormatterConfig
     public function resetCurrencyIsoCode($currencyIsoCode)
     {
         $this->validationCurrencyIsoCode($currencyIsoCode);
-
         $this->currencyIsoCode = $currencyIsoCode;
         return $this;
     }
@@ -72,7 +74,6 @@ final class BaseFormatterConfig implements FormatterConfig
     public function resetLocale($locale)
     {
         $this->validationLocale($locale);
-
         $this->locale = $locale;
         return $this;
     }
@@ -83,6 +84,24 @@ final class BaseFormatterConfig implements FormatterConfig
     public function getLocale()
     {
         return $this->locale;
+    }
+
+    /**
+     * @param $fractionDigits
+     * @return $this
+     */
+    public function resetFractionDigits($fractionDigits)
+    {
+        $this->fractionDigits = $fractionDigits;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getFractionDigits()
+    {
+        return $this->fractionDigits;
     }
 
     /**

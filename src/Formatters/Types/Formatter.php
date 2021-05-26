@@ -22,7 +22,7 @@ abstract class Formatter
     /**
      * @var IntlMoneyFormatter|DecimalMoneyFormatter $formatter
      */
-    private $formatter;
+    protected $formatter;
 
     /**
      * BaseFormatter constructor.

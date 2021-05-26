@@ -49,6 +49,20 @@ class BaseFormatterConfigTest extends TestCase
         $this->assertEquals(Locale::EN_US, $this->formatterConfig->getLocale());
     }
 
+    public function testAssertEqualsFractionDigits()
+    {
+        $this->formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
+        $this->assertEquals(2, $this->formatterConfig->getFractionDigits());
+    }
+
+    public function testAssertEqualsResetFractionDigits()
+    {
+        $this->formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
+        $this->formatterConfig->resetFractionDigits(3);
+
+        $this->assertEquals(3, $this->formatterConfig->getFractionDigits());
+    }
+
     public function testAssertEqualsCurrencyIsoCode()
     {
         $this->formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);

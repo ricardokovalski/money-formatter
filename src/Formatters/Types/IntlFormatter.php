@@ -18,6 +18,8 @@ abstract class IntlFormatter extends Formatter
      */
     public function getObjectIntlMoneyFormatter(FormatterConfig $formatterConfig)
     {
-        return new IntlMoneyFormatter(new \NumberFormatter($formatterConfig->getLocale(), $formatterConfig->getStyleIntl()), new ISOCurrencies());
+        $numberFormatter = new \NumberFormatter($formatterConfig->getLocale(), $formatterConfig->getStyleIntl());
+        $numberFormatter->setAttribute(\NumberFormatter::FRACTION_DIGITS, $formatterConfig->getFractionDigits());
+        return new IntlMoneyFormatter($numberFormatter, new ISOCurrencies());
     }
 }

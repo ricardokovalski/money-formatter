@@ -27,6 +27,30 @@ composer require ricardokovalski/currency-formatter
 
 ## Uso
 
+### BaseFormatterConfig
+
+```php
+use RicardoKovalski\CurrencyFormatter\Enums\IsoCodes;
+use RicardoKovalski\CurrencyFormatter\Enums\Locale;
+use RicardoKovalski\CurrencyFormatter\Formatters\BaseFormatterConfig;
+
+$formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
+```
+
+#### Opções
+
+```php
+use RicardoKovalski\CurrencyFormatter\Enums\IsoCodes;
+use RicardoKovalski\CurrencyFormatter\Enums\Locale;
+use RicardoKovalski\CurrencyFormatter\Formatters\BaseFormatterConfig;
+
+$formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
+
+$formatterConfig->resetCurrencyIsoCode(IsoCodes::USD);
+$formatterConfig->resetLocale(Locale::EN_US);
+$formatterConfig->resetFractionDigits(3);
+```
+
 ### DecimalFormatter
 
 ```php

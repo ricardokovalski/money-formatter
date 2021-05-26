@@ -10,3 +10,4 @@ $formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
 
 $formatterConfig->resetCurrencyIsoCode(IsoCodes::USD);
 $formatterConfig->resetLocale(Locale::EN_US);
+$formatterConfig->resetFractionDigits(3);
