@@ -11,5 +11,3 @@ class CurrencyIsoCodeException extends InvalidArgumentException
         parent::__construct($message);
     }
 }
-
-

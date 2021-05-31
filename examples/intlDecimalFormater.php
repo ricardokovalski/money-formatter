@@ -11,4 +11,3 @@ $formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
 $intlDecimalFormatter = new IntlDecimalFormatter($formatterConfig);
 
 $intlDecimalFormatter->format(268.85); //268,85
-

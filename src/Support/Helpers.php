@@ -1,7 +1,6 @@
 <?php
 
-if ( ! function_exists('toInteger'))
-{
+if (! function_exists('toInteger')) {
     /**
      * @param $amount
      * @return int

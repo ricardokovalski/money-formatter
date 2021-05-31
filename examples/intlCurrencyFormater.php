@@ -11,4 +11,3 @@ $formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
 $intlCurrencyFormatter = new IntlCurrencyFormatter($formatterConfig);
 
 $intlCurrencyFormatter->format(250.75); //R$250.75
-

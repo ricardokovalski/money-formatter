@@ -11,6 +11,3 @@ class LocaleException extends InvalidArgumentException
         parent::__construct($message);
     }
 }
-
-
-
