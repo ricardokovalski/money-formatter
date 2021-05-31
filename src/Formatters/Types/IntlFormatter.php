@@ -1,14 +1,14 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Formatters\Types;
+namespace RicardoKovalski\MoneyFormatter\Formatters\Types;
 
 use Money\Currencies\ISOCurrencies;
 use Money\Formatter\IntlMoneyFormatter;
-use RicardoKovalski\CurrencyFormatter\Formatters\Contracts\FormatterConfig;
+use RicardoKovalski\MoneyFormatter\Formatters\Contracts\FormatterConfig;
 
 /**
  * Class IntlFormatter
- * @package RicardoKovalski\CurrencyFormatter\Formatters\Types
+ * @package RicardoKovalski\MoneyFormatter\Formatters\Types
  */
 abstract class IntlFormatter extends Formatter
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Tests\Formatters\Types;
+namespace RicardoKovalski\MoneyFormatter\Tests\Formatters\Types;
 
 use PHPUnit\Framework\TestCase;
-use RicardoKovalski\CurrencyFormatter\Enums\IsoCodes;
-use RicardoKovalski\CurrencyFormatter\Enums\Locale;
-use RicardoKovalski\CurrencyFormatter\Formatters\BaseFormatterConfig;
-use RicardoKovalski\CurrencyFormatter\Formatters\Types\DecimalFormatter;
+use RicardoKovalski\MoneyFormatter\Enums\IsoCodes;
+use RicardoKovalski\MoneyFormatter\Enums\Locale;
+use RicardoKovalski\MoneyFormatter\Formatters\BaseFormatterConfig;
+use RicardoKovalski\MoneyFormatter\Formatters\Types\DecimalFormatter;
 
 class DecimalFormatterTest extends TestCase
 {

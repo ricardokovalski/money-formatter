@@ -1,16 +1,16 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Formatters\Types;
+namespace RicardoKovalski\MoneyFormatter\Formatters\Types;
 
 use Money\Currency;
 use Money\Formatter\DecimalMoneyFormatter;
 use Money\Formatter\IntlMoneyFormatter;
 use Money\Money;
-use RicardoKovalski\CurrencyFormatter\Formatters\Contracts\FormatterConfig;
+use RicardoKovalski\MoneyFormatter\Formatters\Contracts\FormatterConfig;
 
 /**
  * Class Formatter
- * @package RicardoKovalski\CurrencyFormatter\Formatters\Types
+ * @package RicardoKovalski\MoneyFormatter\Formatters\Types
  */
 abstract class Formatter
 {

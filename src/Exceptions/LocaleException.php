@@ -1,6 +1,6 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Exceptions;
+namespace RicardoKovalski\MoneyFormatter\Exceptions;
 
 use InvalidArgumentException;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Formatters;
+namespace RicardoKovalski\MoneyFormatter\Formatters;
 
-use RicardoKovalski\CurrencyFormatter\Exceptions\CurrencyIsoCodeException;
-use RicardoKovalski\CurrencyFormatter\Exceptions\LocaleException;
-use RicardoKovalski\CurrencyFormatter\Formatters\Contracts\FormatterConfig;
+use RicardoKovalski\MoneyFormatter\Exceptions\CurrencyIsoCodeException;
+use RicardoKovalski\MoneyFormatter\Exceptions\LocaleException;
+use RicardoKovalski\MoneyFormatter\Formatters\Contracts\FormatterConfig;
 
 /**
  * Class BaseFormatterConfig
  *
- * @package RicardoKovalski\CurrencyFormatter\Formatters
+ * @package RicardoKovalski\MoneyFormatter\Formatters
  */
 final class BaseFormatterConfig implements FormatterConfig
 {

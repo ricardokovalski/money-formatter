@@ -1,6 +1,6 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Enums;
+namespace RicardoKovalski\MoneyFormatter\Enums;
 
 class IsoCodes
 {

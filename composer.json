@@ -1,5 +1,5 @@
 {
-  "name": "ricardokovalski/currency-formatter",
+  "name": "ricardokovalski/money-formatter",
   "description": "Biblioteca para formatar valores monetários.",
   "type": "library",
   "authors": [
@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "RicardoKovalski\\CurrencyFormatter\\": "src/"
+      "RicardoKovalski\\MoneyFormatter\\": "src/"
     },
     "files": [
       "src/Support/Helpers.php"
@@ -30,7 +30,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "RicardoKovalski\\CurrencyFormatter\\Tests\\": "tests/"
+      "RicardoKovalski\\MoneyFormatter\\Tests\\": "tests/"
     }
   },
   "minimum-stability": "dev",

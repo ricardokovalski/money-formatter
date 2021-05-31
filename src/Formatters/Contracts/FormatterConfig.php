@@ -1,10 +1,10 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Formatters\Contracts;
+namespace RicardoKovalski\MoneyFormatter\Formatters\Contracts;
 
 /**
  * Interface FormatterConfig
- * @package RicardoKovalski\CurrencyFormatter\Formatters\Contracts
+ * @package RicardoKovalski\MoneyFormatter\Formatters\Contracts
  */
 interface FormatterConfig
 {

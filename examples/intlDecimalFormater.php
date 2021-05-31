@@ -2,10 +2,10 @@
 
 require __DIR__ . '../vendor/autoload.php';
 
-use RicardoKovalski\CurrencyFormatter\Enums\IsoCodes;
-use RicardoKovalski\CurrencyFormatter\Enums\Locale;
-use RicardoKovalski\CurrencyFormatter\Formatters\BaseFormatterConfig;
-use RicardoKovalski\CurrencyFormatter\Formatters\Types\IntlDecimalFormatter;
+use RicardoKovalski\MoneyFormatter\Enums\IsoCodes;
+use RicardoKovalski\MoneyFormatter\Enums\Locale;
+use RicardoKovalski\MoneyFormatter\Formatters\BaseFormatterConfig;
+use RicardoKovalski\MoneyFormatter\Formatters\Types\IntlDecimalFormatter;
 
 $formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
 $intlDecimalFormatter = new IntlDecimalFormatter($formatterConfig);

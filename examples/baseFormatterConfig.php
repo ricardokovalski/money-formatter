@@ -2,9 +2,9 @@
 
 require __DIR__ . '../vendor/autoload.php';
 
-use RicardoKovalski\CurrencyFormatter\Enums\IsoCodes;
-use RicardoKovalski\CurrencyFormatter\Enums\Locale;
-use RicardoKovalski\CurrencyFormatter\Formatters\BaseFormatterConfig;
+use RicardoKovalski\MoneyFormatter\Enums\IsoCodes;
+use RicardoKovalski\MoneyFormatter\Enums\Locale;
+use RicardoKovalski\MoneyFormatter\Formatters\BaseFormatterConfig;
 
 $formatterConfig = new BaseFormatterConfig(IsoCodes::BRL, Locale::PT_BR);
 

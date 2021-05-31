@@ -1,13 +1,13 @@
 <?php
 
-namespace RicardoKovalski\CurrencyFormatter\Tests;
+namespace RicardoKovalski\MoneyFormatter\Tests;
 
 use PHPUnit\Framework\TestCase;
-use RicardoKovalski\CurrencyFormatter\Enums\IsoCodes;
-use RicardoKovalski\CurrencyFormatter\Enums\Locale;
-use RicardoKovalski\CurrencyFormatter\Exceptions\CurrencyIsoCodeException;
-use RicardoKovalski\CurrencyFormatter\Exceptions\LocaleException;
-use RicardoKovalski\CurrencyFormatter\Formatters\BaseFormatterConfig;
+use RicardoKovalski\MoneyFormatter\Enums\IsoCodes;
+use RicardoKovalski\MoneyFormatter\Enums\Locale;
+use RicardoKovalski\MoneyFormatter\Exceptions\CurrencyIsoCodeException;
+use RicardoKovalski\MoneyFormatter\Exceptions\LocaleException;
+use RicardoKovalski\MoneyFormatter\Formatters\BaseFormatterConfig;
 
 class BaseFormatterConfigTest extends TestCase
 {
