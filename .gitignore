@@ -2,5 +2,4 @@
 .php_cs.cache
 vendor/
 tests/build/
-composer.lock
 index.php
