@@ -5,6 +5,7 @@ namespace RicardoKovalski\MoneyFormatter\Formatters;
 use RicardoKovalski\MoneyFormatter\Exceptions\CurrencyIsoCodeException;
 use RicardoKovalski\MoneyFormatter\Exceptions\LocaleException;
 use RicardoKovalski\MoneyFormatter\Formatters\Contracts\FormatterConfig;
+use RicardoKovalski\Locale\Locale;
 
 /**
  * Class BaseFormatterConfig
@@ -19,7 +20,7 @@ final class BaseFormatterConfig implements FormatterConfig
     private $currencyIsoCode;
 
     /**
-     * @var $locale
+     * @var Locale $locale
      */
     private $locale;
 
@@ -44,7 +45,7 @@ final class BaseFormatterConfig implements FormatterConfig
         $this->validationCurrencyIsoCode($currencyIsoCode);
         $this->currencyIsoCode = $currencyIsoCode;
         $this->validationLocale($locale);
-        $this->locale = $locale;
+        $this->locale = Locale::fromString($locale)->format('%l_%C');
         $this->fractionDigits = 2;
     }
 
@@ -74,12 +75,12 @@ final class BaseFormatterConfig implements FormatterConfig
     public function resetLocale($locale)
     {
         $this->validationLocale($locale);
-        $this->locale = $locale;
+        $this->locale = Locale::fromString($locale)->format('%l_%C');
         return $this;
     }
 
     /**
-     * @return mixed
+     * @return Locale
      */
     public function getLocale()
     {

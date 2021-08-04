@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "558aff3a55615838befedd327e1afeae",
+    "content-hash": "833016e4f617e54e97ce4a2494edb2d9",
     "packages": [
         {
             "name": "moneyphp/money",
@@ -91,6 +91,56 @@
                 "source": "https://github.com/moneyphp/money/tree/master"
             },
             "time": "2020-03-18T17:49:59+00:00"
+        },
+        {
+            "name": "ricardokovalski/locale",
+            "version": "v1.0.0-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ricardokovalski/locale.git",
+                "reference": "f7f123405c49d683f2ae1c008e7f7e09ffae0e12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ricardokovalski/locale/zipball/f7f123405c49d683f2ae1c008e7f7e09ffae0e12",
+                "reference": "f7f123405c49d683f2ae1c008e7f7e09ffae0e12",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RicardoKovalski\\Locale\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ricardo Kovalski",
+                    "email": "ricardokovalskicruz@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "A simple PHP Locale Value Object",
+            "keywords": [
+                "locale",
+                "value-object"
+            ],
+            "support": {
+                "issues": "https://github.com/ricardokovalski/locale/issues",
+                "source": "https://github.com/ricardokovalski/locale/tree/v1.0.0-alpha"
+            },
+            "time": "2021-08-04T22:35:08+00:00"
         }
     ],
     "packages-dev": [
@@ -2938,7 +2988,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "ricardokovalski/locale": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
