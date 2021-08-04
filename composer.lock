@@ -98,12 +98,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ricardokovalski/locale.git",
-                "reference": "f7f123405c49d683f2ae1c008e7f7e09ffae0e12"
+                "reference": "f35ec75be0b433529a28bb31727c2827367dd8f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ricardokovalski/locale/zipball/f7f123405c49d683f2ae1c008e7f7e09ffae0e12",
-                "reference": "f7f123405c49d683f2ae1c008e7f7e09ffae0e12",
+                "url": "https://api.github.com/repos/ricardokovalski/locale/zipball/f35ec75be0b433529a28bb31727c2827367dd8f8",
+                "reference": "f35ec75be0b433529a28bb31727c2827367dd8f8",
                 "shasum": ""
             },
             "require": {
@@ -140,7 +140,7 @@
                 "issues": "https://github.com/ricardokovalski/locale/issues",
                 "source": "https://github.com/ricardokovalski/locale/tree/v1.0.0-alpha"
             },
-            "time": "2021-08-04T22:35:08+00:00"
+            "time": "2021-08-04T23:54:20+00:00"
         }
     ],
     "packages-dev": [
