@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dfbf2ffc9834e2ad35a451a9f93e59f6",
+    "content-hash": "4ed0aaf3eb01b8869311cc914e8796f7",
     "packages": [
         {
             "name": "moneyphp/money",
@@ -94,16 +94,16 @@
         },
         {
             "name": "ricardokovalski/locale",
-            "version": "v1.0.0",
+            "version": "v1.0.1-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ricardokovalski/locale.git",
-                "reference": "f35ec75be0b433529a28bb31727c2827367dd8f8"
+                "reference": "c779f680c78a62a5a2d4ead9568d36c3427f16e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ricardokovalski/locale/zipball/f35ec75be0b433529a28bb31727c2827367dd8f8",
-                "reference": "f35ec75be0b433529a28bb31727c2827367dd8f8",
+                "url": "https://api.github.com/repos/ricardokovalski/locale/zipball/c779f680c78a62a5a2d4ead9568d36c3427f16e5",
+                "reference": "c779f680c78a62a5a2d4ead9568d36c3427f16e5",
                 "shasum": ""
             },
             "require": {
@@ -138,9 +138,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ricardokovalski/locale/issues",
-                "source": "https://github.com/ricardokovalski/locale/tree/v1.0.0"
+                "source": "https://github.com/ricardokovalski/locale/tree/v1.0.1-alpha"
             },
-            "time": "2021-08-04T23:54:20+00:00"
+            "time": "2021-08-05T00:41:19+00:00"
         }
     ],
     "packages-dev": [
@@ -2987,8 +2987,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": [],
+    "minimum-stability": "alpha",
+    "stability-flags": {
+        "ricardokovalski/locale": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
