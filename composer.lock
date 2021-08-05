@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ed0aaf3eb01b8869311cc914e8796f7",
+    "content-hash": "88520e047795be7160f526e0ca7613f9",
     "packages": [
         {
             "name": "moneyphp/money",
@@ -94,7 +94,7 @@
         },
         {
             "name": "ricardokovalski/locale",
-            "version": "v1.0.1-alpha",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ricardokovalski/locale.git",
@@ -138,7 +138,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ricardokovalski/locale/issues",
-                "source": "https://github.com/ricardokovalski/locale/tree/v1.0.1-alpha"
+                "source": "https://github.com/ricardokovalski/locale/tree/v1.0.1"
             },
             "time": "2021-08-05T00:41:19+00:00"
         }
@@ -2988,9 +2988,7 @@
     ],
     "aliases": [],
     "minimum-stability": "alpha",
-    "stability-flags": {
-        "ricardokovalski/locale": 15
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
